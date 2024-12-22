@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Engine\Z_Engine\PrimeEditor\App.xaml
-11407045341
+4-275611356
 
-4-1610316736
+7-1962281528
 198-1431420039
-MainWindow.xaml;
+GameProject\NewProjectView.xaml;GameProject\OpenProjectView.xaml;GameProject\ProjectBrowserDialg.xaml;MainWindow.xaml;
 
 False
 

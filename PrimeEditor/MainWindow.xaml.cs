@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PrimeEditor.GameProject;
 
 namespace PrimeEditor
 {
@@ -19,6 +20,26 @@ namespace PrimeEditor
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += OnMainWindowLoaded;
+        }
+
+        private void OnMainWindowLoaded(Object sender, RoutedEventArgs e)
+        {
+            this.Loaded -= OnMainWindowLoaded;
+            OpenProjectBrowserDialog();
+        }
+        private void OpenProjectBrowserDialog()
+        {
+            var projectBrowser = new ProjectBrowserDialg();
+            if (projectBrowser.ShowDialog() == false)
+            {
+                Application.Current.Shutdown();
+
+            }
+            else
+            {
+
+            }
         }
     }
 }

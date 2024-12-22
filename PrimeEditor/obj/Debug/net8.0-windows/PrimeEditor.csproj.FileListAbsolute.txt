@@ -33,3 +33,11 @@ D:\Engine\Z_Engine\x64\Debug\net8.0-windows\PrimeEditor.deps.json
 D:\Engine\Z_Engine\x64\Debug\net8.0-windows\PrimeEditor.runtimeconfig.json
 D:\Engine\Z_Engine\x64\Debug\net8.0-windows\PrimeEditor.dll
 D:\Engine\Z_Engine\x64\Debug\net8.0-windows\PrimeEditor.pdb
+D:\Engine\Z_Engine\PrimeEditor\obj\Debug\net8.0-windows\GameProject\ProjectBrowserDialg.g.cs
+D:\Engine\Z_Engine\PrimeEditor\obj\Debug\net8.0-windows\GameProject\ProjectBrowserDialg.baml
+D:\Engine\Z_Engine\PrimeEditor\obj\Debug\net8.0-windows\PrimeEditor.sourcelink.json
+D:\Engine\Z_Engine\PrimeEditor\obj\Debug\net8.0-windows\GameProject\NewProjectView.g.cs
+D:\Engine\Z_Engine\PrimeEditor\obj\Debug\net8.0-windows\GameProject\OpenProjectView.g.cs
+D:\Engine\Z_Engine\PrimeEditor\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\Engine\Z_Engine\PrimeEditor\obj\Debug\net8.0-windows\GameProject\NewProjectView.baml
+D:\Engine\Z_Engine\PrimeEditor\obj\Debug\net8.0-windows\GameProject\OpenProjectView.baml
