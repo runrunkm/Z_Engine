@@ -1,6 +1,7 @@
 ﻿using PrimeEditor.Utilities;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
@@ -20,55 +21,67 @@ namespace PrimeEditor.GameProject
         public string ProjectFile { get; set; }
         [DataMember]
         public List<string> Folders { get; set; }
+
+        public byte[] Icon { get; set; }
+        public byte[] Screenshot { get; set; }
+
+        public string IconFilePath {  get; set; }
+        public string ScreenshotFilePath { get; set; }
+        public string ProjectFilePath {  get; set; }
+
     }
 
     class NewProject : ViewModeBase
     {
-        private readonly string _templatePath = @"..\..\..\PrimalEditor\ProjectTemplates";
-        private string _name = "NewProject";
-        public string Name
+        private readonly string _templatePath = @"..\..\..\PrimeEditor\ProjectTemplates";
+        private string _Projectname = "NewProject";
+        public string ProjectName
         {
-            get { return _name; }
+            get { return _Projectname; }
 
             set 
             {
-                if (_name != value)
+                if (_Projectname != value)
                 {
-                    _name = value;
-                    OnPropertyChanged(nameof(Name));
+                    _Projectname = value;
+                    OnPropertyChanged(nameof(ProjectName));
                 }
             }
         }
 
-        private string _path = $@"{Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}\PrimalProject\";
-        public string Path
+        private string _Projectpath = $@"{Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}\PrimeProject\";
+        public string ProjectPath
         {
-            get { return _path; }
+            get { return _Projectpath; }
 
             set
             {
-                if (_path != value)
+                if (_Projectpath != value)
                 {
-                    _path = value;
-                    OnPropertyChanged(nameof(Path));
+                    _Projectpath = value;
+                    OnPropertyChanged(nameof(ProjectPath));
                 }
             }
         }
+
+        private ObservableCollection<ProjectTemplate> _projectTemplates = new ObservableCollection<ProjectTemplate>();
+        public ReadOnlyObservableCollection<ProjectTemplate> ProjectTemplates { get; }
+        
         public NewProject()
         {
+            ProjectTemplates = new ReadOnlyObservableCollection<ProjectTemplate>(_projectTemplates);
             try
-            {
+            {   
                 var templatesFiles = Directory.GetFiles(_templatePath, "template.xml", SearchOption.AllDirectories);
                 Debug.Assert(templatesFiles.Any());
                 foreach (var file in templatesFiles)
                 {
-                    var template = new ProjectTemplate()
-                    {
-                        ProjectType = "Empty Project",
-                        ProjectFile = "project.primal",
-                        Folders = new List<string> { ".Primal", "Content", "GameCode" }
-                    };
-                    Serializer.ToFile(template, file);
+                    var template = Serializer.FromFile<ProjectTemplate>(file);
+                    template.IconFilePath = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(file), "Icon.png"));
+                    template.Icon = File.ReadAllBytes(template.IconFilePath);
+                    template.IconFilePath = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(file), "Screenshot.png"));
+                    template.Screenshot = File.ReadAllBytes(template.ScreenshotFilePath);
+                    _projectTemplates.Add(template);
                 }
             }
             catch (Exception ex)
