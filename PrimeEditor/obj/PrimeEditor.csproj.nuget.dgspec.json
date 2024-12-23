@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\Z_Engine\\PrimeEditor\\PrimeEditor.csproj": {}
+    "D:\\Engine\\Z_Engine\\PrimeEditor\\PrimeEditor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\Z_Engine\\PrimeEditor\\PrimeEditor.csproj": {
+    "D:\\Engine\\Z_Engine\\PrimeEditor\\PrimeEditor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Z_Engine\\PrimeEditor\\PrimeEditor.csproj",
+        "projectUniqueName": "D:\\Engine\\Z_Engine\\PrimeEditor\\PrimeEditor.csproj",
         "projectName": "PrimeEditor",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\Z_Engine\\PrimeEditor\\PrimeEditor.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\Z_Engine\\PrimeEditor\\obj\\",
+        "projectPath": "D:\\Engine\\Z_Engine\\PrimeEditor\\PrimeEditor.csproj",
+        "packagesPath": "C:\\Users\\19152\\.nuget\\packages\\",
+        "outputPath": "D:\\Engine\\Z_Engine\\PrimeEditor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\19152\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -67,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

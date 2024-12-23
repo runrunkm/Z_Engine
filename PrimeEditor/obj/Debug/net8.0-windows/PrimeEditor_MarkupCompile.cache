@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Administrator\Desktop\Z_Engine\PrimeEditor\obj\Debug\net8.0-windows\
+D:\Engine\Z_Engine\PrimeEditor\obj\Debug\net8.0-windows\
 PrimeEditor
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Administrator\Desktop\Z_Engine\PrimeEditor\App.xaml
+D:\Engine\Z_Engine\PrimeEditor\App.xaml
 4-275611356
 
 101834823187
-198-556154604
+198-1431420039
 GameProject\NewProjectView.xaml;GameProject\OpenProjectView.xaml;GameProject\ProjectBrowserDialg.xaml;MainWindow.xaml;
 
 False
