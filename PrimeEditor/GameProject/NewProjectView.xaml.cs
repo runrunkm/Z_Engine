@@ -23,6 +23,7 @@ namespace PrimeEditor.GameProject
         public NewProjectView()
         {
             InitializeComponent();
+            
         }
     }
 }
