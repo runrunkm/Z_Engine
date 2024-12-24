@@ -35,3 +35,14 @@ x64
 *.vs
 
 *.lref
+/PrimeEditor/obj/Debug/net8.0-windows/App.g.i.cs
+/PrimeEditor/obj/Debug/net8.0-windows/GameProject/NewProjectView.g.i.cs
+/PrimeEditor/obj/Debug/net8.0-windows/GameProject/OpenProjectView.g.i.cs
+/PrimeEditor/obj/Debug/net8.0-windows/GameProject/ProjectBrowserDialg.g.i.cs
+/PrimeEditor/obj/Debug/net8.0-windows/GeneratedInternalTypeHelper.g.i.cs
+/PrimeEditor/obj/Debug/net8.0-windows/MainWindow.g.i.cs
+/PrimeEditor/obj/Debug/net8.0-windows/PrimeEditor.AssemblyInfo.cs
+/PrimeEditor/obj/Debug/net8.0-windows/PrimeEditor.AssemblyInfoInputs.cache
+/PrimeEditor/obj/Debug/net8.0-windows/PrimeEditor.assets.cache
+/PrimeEditor/obj/Debug/net8.0-windows/PrimeEditor.GeneratedMSBuildEditorConfig.editorconfig
+/PrimeEditor/obj/Debug/net8.0-windows/PrimeEditor_MarkupCompile.i.cache
